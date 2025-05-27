@@ -1,0 +1,585 @@
+<html>
+    <head>
+        <title>Northern Suites</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="Content/Images/logo/NS_logo.png">
+
+
+        <script src="https://unpkg.com/compromise"></script>
+        <script src="public_html/Home/Scripts/index.js"></script>
+        <script src="https://unpkg.com/compromise@latest/builds/compromise.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link href="Content/LightBox/dist/simple-lightbox.min.css" rel="stylesheet" />
+        <script src="Content/LightBox/dist/simple-lightbox.min.js"></script>
+      
+        <link rel="stylesheet" href="Content/Styles/index.css">
+        <link rel="stylesheet" href="Content/Styles/gallery.css">
+        <link rel="stylesheet" href="Content/Styles/reviews.css">
+
+        
+    </head>
+
+    <body>
+        <div id="navDiv" style="display: block;">
+            <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: rgba(143, 117, 87, 0.95); border-style: none; margin-bottom: 125px" id="nsDNavbar">
+                <div style="padding: 0; margin: 0; background-color: white;">
+                    <div class="nsLogo"> 
+                        <img src="Content/Images/logo/NS_logo.png" >
+                    </div>       
+                </div>
+                <div class="row dNav" style="padding: 2px;">
+                    <div style="max-width: 100%;">
+                        <div style="color: white; text-align: center;">
+                            <span class="navItem">
+                                <a class="navLink" onclick="nsScroll(0)">Home</a>
+                            </span>
+                            <span class="navItem">
+                                <a class="navLink" onclick="nsScroll(1)">About Us</a>
+                            </span>
+                            <span class="navItem">
+                                <a class="navLink" href="#gallery">Gallery</a>
+                            </span>
+                            <span class="navItem">
+                                <a class="navLink" href="#enquire">Directions</a>
+                            </span>
+                            <span class="navItem">
+                                <a class="navLink" href="#enquire">Contact Us</a>
+                            </span>
+                            <span class="navItem">
+                                <a class="navLink" href="#book-room"">Book room</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>              
+        </div>
+
+        <!-- main slideshow -->
+        <div style="width: 100%;">
+            <img class="nsSlides" src="Content/Images/NS Images/2016-09-06-Norther-Suites-94.jpg">
+            <img class="nsSlides" src="Content/Images/NS Images/2016-09-06-Norther-Suites-89.jpg">
+            <img class="nsSlides" src="Content/Images/NS Images/2016-09-06-Norther-Suites-1 - Copy.jpg">
+            <img class="nsSlides" src="Content/Images/NS Images/2016-09-06-Norther-Suites-130.jpg">
+        </div>
+        <br>
+
+        <div class="section" id="book-room">
+            <div class="titleDiv">
+
+                <h1>BOOK YOUR ROOM</h1>
+            </div>
+            <div class="container bookRoomContainer text-center" style="padding: 8px;">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-offset-3 col-md-offset-3 col-sm-offset-3">
+                    <div class="bookRoomDiv">
+                        <p class="bold-text">
+                            Book your room at Northern Suites and experience the best of hospitality in Bangalore. 
+                            Our rooms are designed to provide you with a comfortable and relaxing stay.
+                        </p>
+                        <button class="btn btn-default nsBookBtn" onclick="nsOpen(5)">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        
+  
+
+
+
+
+
+
+
+
+
+        <div class="section" id="about">
+            <div class="titleDiv" style="display: none;">
+                <h1>NORTHERN SUITES HOSPITALITY</h1>
+            </div>
+            <div class="container aboutContainer" style="text-align: center; padding: 8px;">
+                    <p id="aboutPt2" style="display: none;">
+                        <br>
+                        <b>NORTHERN SUITES</b> combines the expertise of a truly global management team with the hospitality excellence for which India is renowned for. We pride ourselves on an open, approachable leadership style and recognize that our customers and property partners are the fundamental basis for the success of any hotel management company. Their needs and concerns are our driving force.
+                    </p>
+                    <!-- <br> -->
+                    <a class="nsAboutBtn" id="readMoreBtn" onclick="readMore()">+ Read More</a>
+                    <a class="nsAboutBtn" id="readLessBtn" onclick="readLess()" style="display: none;">- Read Less</a>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="section" id="about2">
+            <div class="container about2Container">
+                <div class="col-lg-6 col-md-6">
+                    <div class="container-fluid">
+                        <img src="Content/Images/NS Images/2016-09-06-Norther-Suites-1 - Copy.jpg" class="aboutImage" title="Northern Suites: Room">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="container-fluid aboutMessage">
+                        <p>
+                            <span style="font-size: 36px;">Homely Accomodation</span><br><br>
+                            Northern Suites has 2 categories of decked-out accommodations - Premium Rooms and Premium Plus rooms. All guests receive complimentary access to the internet and room service is available around the clock to cater to your every need.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container about2Container">
+                <div class="col-lg-6 col-md-6">
+                    <div class="container-fluid aboutMessage">
+                        <p>
+                            <span style="font-size: 36px;">Sumptuous Dining</span><br><br>
+                            Enjoy our in-house eatery which is a multi-cuisine restaurant on the rooftop of Northern Suites. We offer Breakfast, Evening Snacks and Dinner. Enjoy breathtaking views of the city while indulging in mouthwatering delicacies that are carefully crafted by our expert chefs.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="container-fluid">
+                        <img src="Content/Images/NS Images/2016-09-06-Norther-Suites-112.jpg" class="aboutImage" title="Northern Suites: Roof-Top Restaurant">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container about2MobileContainer">
+                <div>
+                    <div class="container-fluid">
+                        <img src="Content/Images/NS Images/2016-09-06-Norther-Suites-1 - Copy.jpg" class="aboutImage">
+                    </div>
+                </div>
+                <div>
+                    <div class="container-fluid abtMobileMsg" style="text-align: center;">
+                            <h2 style="margin-bottom:15px">Homely Accomodation</h2>
+                            Northern Suites has 2 categories of decked-out accommodations - Premium Rooms and Premium Plus rooms. All guests receive complimentary access to the internet and room service is available around the clock to cater to your every need.
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="container about2MobileContainer">
+                <div>
+                    <div class="container-fluid abtMobileMsg">
+                        <img src="Content/Images/NS Images/2016-09-06-Norther-Suites-112.jpg" class="aboutImage">
+                    </div>
+                </div>
+                <div>
+                    <div class="container-fluid abtMobileMsg" style="text-align: center;">
+                            <h2 style="margin-bottom:15px">Sumptuous Dining</h2>
+                            Enjoy our in-house eatery which is a multi-cuisine restaurant on the rooftop of Northern Suites. We offer Breakfast, Evening Snacks and Dinner. Enjoy breathtaking views of the city while indulging in mouthwatering delicacies that are carefully crafted by our expert chefs.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+
+        <div class="section" id="gallery">
+            <div class="titleDiv">
+                <h1>GALLERY</h1>
+            </div>
+            <div class="container galleryContainer" style="text-align: center; padding: 8px;">    
+                <div class="gallery"> 
+                    <a href="Content/Images/NS Images/2016-09-06-Norther-Suites-94.jpg" rel="rel1">
+                        <img class="nsThumbnail" src="Content/Images/NS Images/2016-09-06-Norther-Suites-94.jpg" alt="" title="Northern Suites">
+                    </a>
+                    <a href="Content/Images/NS Images/2016-09-06-Norther-Suites-22.jpg" rel="rel1">
+                        <img class="nsThumbnail" src="Content/Images/NS Images/2016-09-06-Norther-Suites-22.jpg" alt="" title="Northern Suites: Room">
+                    </a>
+                    <a href="Content/Images/NS Images/2016-09-06-Norther-Suites-18.jpg" rel="rel1">
+                        <img class="nsThumbnail" src="Content/Images/NS Images/2016-09-06-Norther-Suites-18.jpg" alt="" title="Northern Suites: Room">
+                    </a>
+                    <a href="Content/Images/NS Images/2016-09-06-Norther-Suites-75.jpg" class="big" rel="rel1">
+                        <img class="nsThumbnail" src="Content/Images/NS Images/2016-09-06-Norther-Suites-75.jpg" alt="" title="Northern Suites: Room">
+                    </a>
+                      
+                    <a href="Content/Images/NS Images/2016-09-06-Norther-Suites-60.jpg" class="big" rel="rel1">
+                        <img class="nsThumbnail" src="Content/Images/NS Images/2016-09-06-Norther-Suites-60.jpg" alt="" title="Northern Suites: Room Amenities">
+                    </a> 
+                    <a href="Content/Images/NS Images/2016-09-06-Norther-Suites-57.jpg" class="big" rel="rel1">
+                        <img class="nsThumbnail" src="Content/Images/NS Images/2016-09-06-Norther-Suites-57.jpg" alt="" title="Northern Suites:BathRoom">
+                    </a>
+                    <a href="Content/Images/NS Images/2016-09-06-Norther-Suites-42.jpg" class="big" rel="rel1">
+                        <img class="nsThumbnail" src="Content/Images/NS Images/2016-09-06-Norther-Suites-42.jpg" alt="" title="Northern Suites: BathRoom">
+                    </a>
+                    <a href="Content/Images/NS Images/2016-09-06-Norther-Suites-37.jpg" class="big" rel="rel1">
+                        <img class="nsThumbnail" src="Content/Images/NS Images/2016-09-06-Norther-Suites-37.jpg" alt="" title="Northern Suites: Room Amenities">
+                    </a>
+                    
+                    <a href="Content/Images/NS Images/2016-09-06-Norther-Suites-109.jpg" class="big" rel="rel1">
+                        <img class="nsThumbnail" src="Content/Images/NS Images/2016-09-06-Norther-Suites-109.jpg" alt="" title="Northern Suites: Roof-Top View">
+                    </a>
+                    <a href="Content/Images/NS Images/2016-09-06-Norther-Suites-112.jpg" class="big" rel="rel1">
+                        <img class="nsThumbnail" src="Content/Images/NS Images/2016-09-06-Norther-Suites-112.jpg" alt="" title="Northern Suites: Roof-Top Restaurant">
+                    </a>
+                    <a href="Content/Images/NS Images/2016-09-06-Norther-Suites-76.jpg" rel="rel1">
+                        <img class="nsThumbnail" src="Content/Images/NS Images/2016-09-06-Norther-Suites-76.jpg" alt="" title="Northern Suites: Roof-Top Restaurant">
+                    </a>
+                    <a href="Content/Images/NS Images/2016-09-06-Norther-Suites-137.jpg" class="big" rel="rel1">
+                        <img class="nsThumbnail" src="Content/Images/NS Images/2016-09-06-Norther-Suites-137.jpg" alt="" title="Northern Suites: Roof-Top Restaurant">
+                    </a>
+                </div>  
+            </div>
+        </div>    
+        <br>
+
+        <div class="section" id="amenities">
+            <div class="titleDiv">
+                <h1>HOTEL AMENITIES</h1>
+            </div>
+            <div class="container amenitiesContainer" style="text-align: center;">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 nsAmCard">
+                    <i class="fa fa-clock-o"></i><br>
+                    <h4>
+                        24-Hour Room Assistance
+                    </h4>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 nsAmCard">
+                    <i class="fa fas fa-broom"></i><br>
+                    <h4>
+                        Daily Housekeeping
+                    </h4>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 nsAmCard">
+                    <i class="fa fa-bed"></i><br>
+                    <h4>
+                        Comfortable Rooms
+                    </h4>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 nsAmCard">
+                    <i class="fa fa-cutlery"></i><br>
+                    <h4>
+                        Restaurant
+                    </h4>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 nsAmCard">
+                    <i class="fa fa-wifi"></i><br>
+                    <h4>
+                        Free Wi-Fi
+                    </h4>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 nsAmCard">
+                    <i class="fa fas fa-temperature-low"></i>
+                    <h4>
+                        Air-Conditioning
+                    </h4>
+                </div>                
+            </div>
+        </div>
+        <br>
+
+        <div class="section" id="enquire">
+            <div class="titleDiv">
+                <h1>GET IN TOUCH</h1>
+            </div>        
+            <div class="container enquireContainer" style="text-align: center; padding: 8px;">
+                    <div class="col-lg-4 col-md-4 col-sm-4 nsDynamicBorder" style="padding: 0;">
+                        <div class="nsContactCard">
+                            <!-- <i class="fa fa-whatsapp" style="font-size: 144px; color: rgb(143, 117, 87);"></i><br> -->
+                            <img src="Content/Icons/whatsapp.png" style="height: 144px; padding: 10px 0;">
+                            <h4>Enquire about  your next stay</h4><br>
+                            <button class="btn btn-default nsContactBtn" onclick="nsOpen(5)"><h5>Chat with us</h5></button>
+                        </div>                    
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 nsDynamicBorder">
+                        <div class="nsContactCard"> 
+                            <div class="contactCard">
+                                <h3><i class="fa fa-phone" style="text-align: left;"></i>&nbsp;Call Us:<br></h3>
+                                <h4>
+                                    <a href="tel:+919886035484">+91-9886035484</a><br>
+                                    <a href="tel:+918041717115">+91-8041717115</a><br>
+                                </h4>
+                                <br>
+                                <h3><i class="fa fa-envelope"></i>&nbsp;Mail Us:</h3>
+                                <h4>
+                                    <a href="mailto:karthick@northern-suites.com?Subject=Enquiry">karthick@northern-suites.com</a>
+                                </h4>
+                            </div>
+                        </div>                  
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 ">
+                        <div class="nsContactCard">
+                            <!-- <i class="fa fa-map-marker" style="font-size: 144px; color: rgb(143, 117, 87);"></i><br> -->
+                            <img src="Content/Icons/google-maps.png" style="height: 144px; padding: 10px 0;">
+                            <h4>Find Us on Google Maps</h4><br>
+                            <button class="btn btn-default nsContactBtn" onclick="nsOpen(4)"><h5>Visit us</h5></button>
+                        </div>                    
+                    </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="section" id="review">
+            <div class="titleDiv">
+                <h1>RECENT REVIEWS</h1>
+            </div>
+            <br>
+            <div class="container desktopReviews">
+                <div class="slideshow-container">
+                    
+                    <div class="mySlides">
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="reviewCard">
+                                <div class="reviewData">
+                                    <span style="text-align: center;">
+                                        "good hotel, cleanliness, well maintained rooms, great location, loots of food joints close by... if your office is in Brookfield, marathalli or Whitefield this is the best budget business hotel to stay"
+                                    </span>
+                                    <br><br>
+                                    <span style="text-align: right;">
+                                        - Rahul
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="col-lg-4 col-md-4 col-sm-4 extReview">
+                            <div class="reviewCard">
+                                <div class="reviewData">
+                                    <span style="text-align: center;">
+                                        "No doubt Northern Suites is where i had my best stay ever in India. Beautiful infrastructure and excellent interiors. Received good response and attention from all staffs employed over there. The best was the Terrace Dining. Wow... I just loved my food served in that lovely atmosphere. A good option for parties. Safe Transport arrangement on request was also taken care and i had no fear staying here till my work was completed.
+    Thank you for making me feel at home."
+                                    </span>
+                                    <br><br>
+                                    <span style="text-align: right;">
+                                        - Manoharan durgadevi
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="reviewCard">
+                                <div class="reviewData">
+                                    <span style="text-align: center;">
+                                        "Good stay.. very decent rooms good veg and non veg hotels nearby..
+    No car parking available…
+    Worth the money if it’s for a short duration"
+                                    </span>
+                                    <br><br>
+                                    <span style="text-align: right;">
+                                        - Raamakrishnan Vaidyanathan
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="col-lg-4 col-md-4 col-sm-4 extReview">
+                            <div class="reviewCard">
+                                <div class="reviewData">
+                                    <span style="text-align: center;">
+                                        "The hotel is well located and lighted. I liked the ambience and the services provided during the stay. The complimentary breakfast has enough food options for almost all types of earthing habits. This makes the beginning of your day more beautiful and fresh. The food menu for room service has sufficient options of North, South and Chinese menus. You may also try the restaurants and market available at walking distance from the hotel."
+                                    </span>
+                                    <br><br>
+                                    <span style="text-align: right;">
+                                        - Manish Taneja 
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="reviewCard">
+                                <div class="reviewData">
+                                    <span style="text-align: center;">
+                                        "One of the reasons I quite enjoyed my first few days in Bangalore is being at this hotel. The rooms are simply neat and clean. Great location. Their staff is sincerely one of the best I had ever met ❤️ Totally recommended."
+                                    </span>
+                                    <br><br>
+                                    <span style="text-align: right;">
+                                        - Nour Diab
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="reviewCard">
+                                <div class="reviewData">                                    
+                                    <span style="text-align: center;">
+                                        "We had booked 2 rooms at this place.
+                                        We checked in late at night and we checked out early in the morning, so we didn't get much time to have a good look at the property.
+                                        The rooms were spacious and clean. The person at the counter was helpful.
+                                        One of the rooms had a leaking pipe, and the room was changed promptly after reporting the issue.
+                                        Overall, a fine stay considering the price that we got."
+                                    </span>
+                                    <br><br>
+                                    <span style="text-align: right;">
+                                        - Priyank Gupta 
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="text-align:center">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="container mobileReviews">
+                <div class="slideshow-container">
+                    
+                    <div class="mySlidesM">
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <div class="reviewCard">
+                                <div class="reviewData">
+                                    <span style="text-align: center;">
+                                        "good hotel, cleanliness, well maintained rooms, great location, loots of food joints close by... if your office is in Brookfield, marathalli or Whitefield this is the best budget business hotel to stay"
+                                    </span>
+                                    <br><br>
+                                    <span style="text-align: right;">
+                                        - Rahul
+                                
+                                
+                                    </span>
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>
+                    
+                    <div class="mySlidesM">                    
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <div class="reviewCard">
+                                <div class="reviewData">
+                                    <span style="text-align: center;">
+                                        "One of the reasons I quite enjoyed my first few days in Bangalore is being at this hotel. The rooms are simply neat and clean. Great location. Their staff is sincerely one of the best I had ever met ❤️ Totally recommended.""
+                                    </span>
+                                    <br><br>
+                                    <span style="text-align: right;">
+                                        - Nour Diab
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mySlidesM">
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <div class="reviewCard">
+                                <div class="reviewData">
+                                    <span style="text-align: center;">
+                                        "Good stay.. very decent rooms good veg and non veg hotels nearby..
+                                            No car parking available…
+                                            Worth the money if it’s for a short duration"
+                                    </span>
+                                    <br><br>
+                                    <span style="text-align: right;">
+                                        - Raamakrishnan Vaidyanathan
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="text-align:center">
+                      <span class="dotM"></span> 
+                      <span class="dotM"></span> 
+                      <span class="dotM"></span> 
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <br>
+
+        <!-- <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnorthernsuites&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe> -->
+      
+        <div class="footerDiv" style="background-color: rgb(143, 117, 87); border-style: none; padding: 75px 0">
+            <h4>
+                Northern Suites Hospitality
+            </h4>
+            <br>
+            <h5 style="text-align: center; color: white;">
+                <a onclick="nsOpen(4)">
+                    No. 1623, Kundalahalli Main Road, 'E' Block, AECS Layout, Kundalahalli, Brookefield, Bengaluru 560037
+                </a>
+                <br><br>
+                
+                <span class="nsDynamic"><i class="fa fa-phone nsIconContact"></i>&nbsp;<a href="tel:+919886035484">+91-9886035484</a>&nbsp;</span>
+                <span class="nsDynamic"><i class="fa fa-phone nsIconContact"></i>&nbsp;<a href="tel:+918041717115">+91-8041717115</a>&nbsp;</span>
+                <span class="nsDynamic"><i class="fa fa-envelope nsIconContact"></i>&nbsp;<a href="mailto:karthick@northern-suites.com?Subject=Enquiry">karthick@northern-suites.com</a></span>
+                
+                <br><br>
+
+                Get In Touch
+                <br><br>
+
+                <div>
+                    <i><img src="Content/Icons/facebook.png" class="socialIcon" onclick="nsOpen(1)"></i>&nbsp;
+                    <i><img src="Content/Icons/instagram.png" class="socialIcon" onclick="nsOpen(2)"></i>&nbsp;
+                    <i><img src="Content/Icons/google.png" class="socialIcon" onclick="nsOpen(3)"></i>
+                </div>
+            </h5>
+
+            <div class="nsFooterNav" style="color: white; text-align: center;">
+                <hr style="width: 80%; margin: 0px auto; margin-top: 50px;">
+                <br>
+                <span class="navItem">
+                    <a class="navLink" onclick="nsScroll(0)">Home</a>
+                </span>
+                <span class="navItem">
+                    <a class="navLink" onclick="nsScroll(1)">About Us</a>
+                </span>
+                <span class="navItem">
+                    <a class="navLink" href="#gallery">Gallery</a>
+                </span>
+                <span class="navItem">
+                    <a class="navLink" href="#enquire">Directions</a>
+                </span>
+                <span class="navItem">
+                    <a class="navLink" href="#enquire">Contact Us</a>
+                </span>
+            </div>
+        </div>
+
+        <!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+        <div class="elfsight-app-8cfa45b3-36ae-4940-a574-d2ce83dfd57e"></div> -->
+
+   <!-- Chatbot Container -->
+<div id="ns-chatbot-container" class="ns-chatbot-closed">
+    <div id="ns-chatbot-box">
+        <div class="ns-chatbot-header">
+            <span>Chat with Us</span>
+            <button class="ns-chatbot-close">&times;</button>
+        </div>
+        <div id="ns-chatbot-messages"></div>
+        <div class="ns-chatbot-input-container">
+            <input type="text" id="ns-chatbot-input" placeholder="Type a message..." />
+            <button id="ns-chatbot-send">Send</button>
+        </div>
+    </div>
+    <button id="ns-chatbot-toggle">Chat</button>
+</div>
+        <script src="https://js.stripe.com/v3/"></script>
+
+        
+<button id="checkout-button">Book Now</button>
+
+<script>
+fetch('/payment.php', { method: 'POST' })
+  .then(response => response.json())
+  .then(session => {
+    return Stripe('your-publishable-key').redirectToCheckout({ sessionId: session.id });
+  });
+</script>
+
+        
+        <script src="Scripts/index.js"></script>
+        <script src="Scripts/lightbox.js"></script>
+        <script src="Scripts/review.js"></script>
+    </body>
+</html>

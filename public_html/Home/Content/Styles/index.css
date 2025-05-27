@@ -1,0 +1,638 @@
+body{
+    display: block;
+    background-color: white;
+    /* font-family: sans-serif; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* padding-top: 90px; */
+    /* font-family: calibri; */
+
+    background-image: linear-gradient(#ffffff, #ffffff); 
+   background-color: #000000;
+}
+
+h1,h2,h3,h4,h5,h6,h7{    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a :hover{
+    color: #C9A272;
+}
+
+.nsLogo{
+    max-width: 300px;
+    margin: auto;
+}
+
+.nsLogo img{
+    height: 65px;
+    max-width: 300px;
+}
+
+.socialIcon{
+    height: 40px;
+    cursor: pointer;
+}
+
+.navLink{
+    padding: 5px 10px;
+    vertical-align: middle;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navLink:hover{
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.carousel-inner>.item>img{
+    width: 100%;
+    max-height: 700px;
+    object-fit: fill;
+    align-items: center;
+}
+
+.bold-text{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+
+.nsSlides{
+    display: none;
+    max-height: 600px;
+    width: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+/* Slideshow images */
+.nsSlides {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.titleDiv{
+    background-color: whitesmoke;
+    background-image: linear-gradient(whitesmoke, white, white);
+    opacity: 0.8;
+    position: center;
+    color: #4a4949;
+    text-align: center;
+    /* font-family: 'Calibri'; */
+}
+
+#aboutDiv{
+    background-color: #C9A272;
+    color: black;
+    border-radius: 10px;
+}
+
+.aboutContent{
+    width: 100%;
+    margin: 0px auto;
+}
+
+.aboutContent>h4{
+    text-align: justify;
+}
+
+.aboutImg{
+    height: 375px;
+    width: 100%;
+    object-fit: fill;
+    align-items: center;
+}
+
+#flashDiv{
+    margin-bottom: 10px;
+}
+
+.nsCard{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    /* margin-bottom: 5px; */
+    padding: 10px 5px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #C9A272;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+}
+
+.nsCardBtn{
+    background-color: #C9A272;
+    color: white;
+    border-style: none;
+    width: 175px;
+}
+
+.nsIconSocial{
+    background-color: white;
+    /* color: rgba(184,146,102,0.95); */
+    /* padding: 8px; */
+    height: 40px;
+    width: 40px;
+}
+
+.nsLink{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footerDiv{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    margin-top: 80px;
+}
+
+.footerDiv > h4, h5{
+    text-align: center;
+    color: white;
+}
+
+.nsDynamic{
+    margin: 0px 10px;
+}
+
+#reviewDiv > a{
+    display: none;
+}
+
+.nsContactCard{
+    /* height: 250px; */
+    margin: 0 auto;
+    /* border-radius: 25px;
+    border: gray;
+    border-style: groove; */
+    /* background-color: white; */
+    color: #333;
+    text-align: center;
+    min-height: 275px;
+}
+
+.nsContactCard h4{
+    color: #333;
+}
+
+.contactCard{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    min-width: 275px;
+    color: #333;
+}
+
+.contactCard a{
+    color: grey;
+}
+
+.nsContactBtn{
+    width: 150px;
+    background-color: #333;
+    color: white;
+}
+
+.nsAmCard{
+    height: 125px;
+    border-radius: 25px;
+    padding: 15px;
+    /* color: grey; */
+}
+
+.nsAmCard > .fa{
+    font-size: 48px;
+}
+
+.aboutCarousel {
+    overflow: hidden;
+    width: 100%;
+    height: 250px;
+    position: relative;
+}
+
+.aboutSlide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* border-radius: 25px;
+    border-style: groove;
+    border-color: rgb(143, 117, 87); */
+    /* background-color: whitesmoke; */
+    /* background-image: linear-gradient(white, whitesmoke, white); */
+    /* background-image: linear-gradient(to right, white, whitesmoke, white); */
+}
+    
+.aboutSlide p {
+    margin: 0;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* color: rgb(143, 117, 87); */
+    /* font-size: 36px; */
+}
+
+.aboutName{    
+    margin: 0;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.aboutImage{
+    width: 100%;
+    height: 400px;
+    box-shadow: 0px 3px rgba(0,0,0,0.15);
+}
+
+.abtMobileMsg{
+    height: auto;
+    font-size: 20px;
+}
+
+.aboutMessage{
+    height: 400px;
+    /* font-size: 20px; */
+}
+
+.aboutMessage p {
+    font-size: 20px;
+    margin: 0;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.aboutDiv{
+    padding: 20px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.nsAboutBtn{
+    color: rgb(143, 117, 87);
+    float: right;
+}
+
+.nsThumbnail{
+    /* height: 230px;
+    width: 350px; */
+    height: 225px;
+    width: 20%;
+    object-fit: cover;
+    /* padding: 3px 1px; */
+    padding: 2px 0;
+    opacity: 1;
+}
+
+.aboutContainer{
+    width: 70%;
+    padding:0;
+    padding-top: 20px;
+}
+
+.about2Container{
+    width: 80%;
+    padding: 20px 0;
+}
+
+.galleryContainer{
+    width: 100%;
+    /* background-color: whitesmoke; */
+    /* background-color: #4a4949; */
+}
+
+.amenitiesContainer{
+    max-width: 800px; 
+    /* background-color: #4a4949; */
+}
+
+.enquireContainer{
+    max-width: 1000px;
+}
+
+.nsNotif{
+    z-index: 100;
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    height: 60px;
+    width: 250px;
+    text-align: center;
+    font-size: 20px;
+
+    border:#4a4949;
+    border-radius: 25px;
+    background-color: #4a4949;
+    color: white;
+}
+
+.nsNotifImg{
+    height: 36px;
+}
+
+
+
+@media screen and (min-width: 600px) {
+    .mNav{
+        display: none;
+    }
+
+    .aboutSlide p{
+        font-size: 20px;
+    }
+    
+    .titleDiv{
+        padding: 8px;
+        background-color: whitesmoke;
+        background-image: linear-gradient(whitesmoke, white, white);
+        color: #333;
+    }
+        
+    .titleDiv h1{
+        font-size: 72px;
+    }
+
+    .body{
+        padding-top: 60px;
+    }
+
+    .nsDynamicBorder{
+        border:0;
+        border-right: 3px;
+        border-color: grey; 
+        border-style:solid;
+    }
+}
+
+@media screen and (min-width:991px){  
+    .about2MobileContainer{
+        display: none;
+    }
+
+    .mobileReviews{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .about2Container{
+        display: none;
+    }
+    
+    .about2MobileContainer{
+        width: 100%;
+    }
+
+    .extReview{
+        display: none;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .mobileReviews{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .dNav{
+        display: none;
+    }
+
+    .mNav{
+        display:block;
+    }
+
+    .body{
+        padding-top: 65px;
+    }
+    
+    .aboutCarousel{
+        height: 350px;
+    }
+
+    .nameDiv{
+        display: none;
+    }
+
+    .nsDynamic{
+        display: block;
+        text-align: center;
+        margin: 5px auto;
+    }
+
+    .nsFooterNav{
+        display: none;
+    }
+
+    .nsThumbnail{
+        width: 32%;
+        height: 90px;
+    }
+
+    .nsDynamicBorder{
+        border:0;
+        border-bottom: 3px;
+        border-color: grey; 
+        border-style:solid;
+    }
+
+    .aboutContainer, .about1Container, .about2Container{
+        width: 100%;
+        padding: 0;
+    }
+
+    .aboutDiv{
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .aboutImage{
+        height: 200px;
+    }
+
+    .aboutMessage{
+        height: auto;
+    }
+
+    .about2Container{
+        display: none;
+    }
+
+    .about2MobileContainer{
+        width: 100%;
+    }
+
+    .desktopReviews{
+        display: none;
+    }
+}
+
+/* Book Room Section */
+#book-room {
+    padding: 20px 0;
+    background-color: #f9f9f9;
+}
+
+#book-room .titleDiv h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.bookRoomContainer {
+    padding: 8px;
+}
+
+.bookRoomDiv {
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.nsBookBtn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #8f7557;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.nsBookBtn:hover {
+    background-color: #7e644b;
+}
+
+/* Chatbot Styles */
+#ns-chatbot-container {
+position: fixed;
+bottom: 80px;
+right: 20px;
+z-index: 1000;
+}
+
+#ns-chatbot-box {
+width: 300px;
+height: 400px;
+background-color: #fff;
+border: 1px solid #ccc;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+display: flex;
+flex-direction: column;
+overflow: hidden;
+transition: transform 0.3s ease;
+}
+  
+.ns-chatbot-closed #ns-chatbot-box {
+display: none;}
+
+.ns-chatbot-header {
+background-color: #8f7557;
+color: #fff;
+padding: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.ns-chatbot-close {
+background: none;
+border: none;
+color: #fff;
+font-size: 20px;
+cursor: pointer;
+}
+
+#ns-chatbot-messages {
+flex: 1;
+padding: 10px;
+overflow-y: auto;
+background-color: #f9f9f9;
+}
+
+.ns-chatbot-message {
+margin-bottom: 10px;
+padding: 8px;
+border-radius: 5px;
+max-width: 80%;
+}
+
+.ns-user-message {
+background-color: #8f7557;
+color: #fff;
+margin-left: auto;
+}
+
+.ns-bot-message {
+background-color: #e0e0e0;
+color: #000;
+margin-right: auto;
+}
+
+.ns-chatbot-input-container {
+display: flex;
+border-top: 1px solid #ccc;
+}
+
+#ns-chatbot-input {
+flex: 1;
+padding: 10px;
+border: none;
+outline: none;
+}
+
+#ns-chatbot-send {
+padding: 10px;
+background-color: #8f7557;
+color: #fff;
+border: none;
+cursor: pointer;
+}
+
+#ns-chatbot-toggle {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background-color: #8f7557;
+color: #fff;
+border: none;
+border-radius: 50%;
+width: 50px;
+height: 50px;
+font-size: 16px;
+cursor: pointer;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+z-index: 1001; /* Ensure the toggle button is above the chatbot box */
+}
+
+.sl-wrapper{
+    background-color: rgba(0,0,0,0.75);
+    /*box-shadow: 5px 5px rgba(0,0,0,0.75);*/
+}
+
+
