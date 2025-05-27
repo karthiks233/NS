@@ -7,7 +7,8 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="icon" type="image/png" sizes="32x32" href="Content/Images/logo/NS_logo.png">
 
-
+        <!-- filepath: /Users/karthikraja/Documents/NorthernSuites/public_html/Home/index.html -->
+        <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
         <script src="https://unpkg.com/compromise"></script>
         <script src="public_html/Home/Scripts/index.js"></script>
         <script src="https://unpkg.com/compromise@latest/builds/compromise.min.js"></script>
@@ -57,7 +58,7 @@
                                 <a class="navLink" href="#enquire">Contact Us</a>
                             </span>
                             <span class="navItem">
-                                <a class="navLink" href="#book-room"">Book room</a>
+                                <a class="navLink" href="#book-room">Book room</a>
                         </div>
                     </div>
                 </div>
@@ -85,7 +86,7 @@
                             Book your room at Northern Suites and experience the best of hospitality in Bangalore. 
                             Our rooms are designed to provide you with a comfortable and relaxing stay.
                         </p>
-                        <button class="btn btn-default nsBookBtn" onclick="nsOpen(5)">Book Now</button>
+                        <button class="btn btn-default nsBookBtn" onclick="openRazorpayPayment()">Book Now</button>
                     </div>
                 </div>
             </div>
@@ -297,7 +298,7 @@
                                 <h3><i class="fa fa-phone" style="text-align: left;"></i>&nbsp;Call Us:<br></h3>
                                 <h4>
                                     <a href="tel:+919886035484">+91-9886035484</a><br>
-                                    <a href="tel:+918041717115">+91-8041717115</a><br>
+                                    <a href="tel:+918041717115">+91-8041717114</a><br>
                                 </h4>
                                 <br>
                                 <h3><i class="fa fa-envelope"></i>&nbsp;Mail Us:</h3>
@@ -564,19 +565,6 @@
     </div>
     <button id="ns-chatbot-toggle">Chat</button>
 </div>
-        <script src="https://js.stripe.com/v3/"></script>
-
-        
-<button id="checkout-button">Book Now</button>
-
-<script>
-fetch('/payment.php', { method: 'POST' })
-  .then(response => response.json())
-  .then(session => {
-    return Stripe('your-publishable-key').redirectToCheckout({ sessionId: session.id });
-  });
-</script>
-
         
         <script src="Scripts/index.js"></script>
         <script src="Scripts/lightbox.js"></script>

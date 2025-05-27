@@ -54,6 +54,51 @@ function nsScroll(n){
   }
 }
 
+
+function openRazorpayPayment(){
+  // Replace '/create_order.php' with your backend endpoint. 
+  // The backend should create a Razorpay order and return order details as JSON.
+  fetch('/create_order.php', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ amount: 50000 })  // example: amount in paise (₹500)
+  })
+  .then(response => response.json())
+  .then(data => {
+    var options = {
+      "key": "YOUR_RAZORPAY_KEY", // Replace with your Razorpay Key ID
+      "amount": data.amount,      // e.g. "50000" 
+      "currency": data.currency,  // e.g. "INR"
+      "name": "Northern Suites",
+      "description": "Room Booking Payment",
+      "order_id": data.order_id,  // Order ID returned from your backend
+      "handler": function (response){
+          // Payment success callback
+          console.log("Payment ID:", response.razorpay_payment_id);
+          // Optionally, inform your backend about this payment
+      },
+      "prefill": {
+         "name": "",
+         "email": "",
+         "contact": ""
+      },
+      "theme": {
+         "color": "#F37254"
+      }
+    };
+    var rzp1 = new Razorpay(options);
+    rzp1.open();
+  })
+  .catch(function(error){
+    console.error('Error while creating order:', error);
+  });
+}
+
+
+
+
+
+
 function nsOpen(n){
   if(n==1)
     window.open('https://www.facebook.com/northernsuites/','_blank')
@@ -67,6 +112,9 @@ function nsOpen(n){
     window.open("https://api.whatsapp.com/send?phone=919742612341","_blank");
 
 }
+
+
+
 
 
 
